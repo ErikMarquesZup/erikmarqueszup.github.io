@@ -43,16 +43,52 @@ descrição):
     ```
 - Maven: https://maven.apache.org/install.html
 
-## Iniciando os serviços
+## 1. Baixar codigo fonte
 
-### 1. Iniciar o docker compose
+Codigo fonte: https://github.com/ErikMarquesZup/camunda-kafka/tree/poc/kafka-request-reply
+
+## 2. Acessar o repositorio local
+
+```
+$ cd camunda-kafka
+```
+
+### 3. Iniciar o docker compose
 
 ```
 $ docker-compose -f docker-compose-local.yml up
 ```
 
-### 2. Build no projeto
+### 4. Build no projeto
 
 ```
 $ mvn clean install
+```
+
+### 5. Para terminar o processamento dos containers via docker-compose
+
+CRTL + C
+
+```
+$ docker-compose -f docker-compose-local.yml down --remove-orphans
+```
+
+### Comandos uteis do DOCKER
+
+### 1. Parar todos os containers
+
+```
+$ docker stop $(docker ps -aq)
+```
+
+### 2. Remover todos os containers
+
+```
+$ docker rm $(docker ps -aq)
+```
+
+### 3. Remover todos os volumes
+
+```
+$ docker volume rm $(docker volume ls -qf dangling=true)
 ```
