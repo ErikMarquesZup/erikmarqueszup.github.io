@@ -4,13 +4,14 @@ This module uses automatic BPMN deployment
 
 ## Tecnologias utilizadas
 
-- Java
+- Java > 1.8
 - Maven
 - PostgreSQL
-- Docker
+- Docker/Docker-Compose
 - Spring Boot
 - Kafka
 - Camunda
+- Camunda Modeler
 
 ## Instalação
 
@@ -42,6 +43,8 @@ descrição):
     $ sudo apt-get install docker-compose
     ```
 - Maven: https://maven.apache.org/install.html
+
+- Camunda Modeler: https://camunda.com/download/modeler/
 
 ## 1. Baixar codigo fonte
 
