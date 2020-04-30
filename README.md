@@ -4,7 +4,7 @@ This module uses automatic BPMN deployment
 
 ## Tecnologias utilizadas
 
-- Java > 1.8
+- Java >= 1.8
 - Maven
 - PostgreSQL
 - Docker/Docker-Compose
